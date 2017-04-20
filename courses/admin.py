@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Course, Step
 
 
-class StepInline(admin.StackedInline):
+class StepInline(admin.TabularInline):
 
     model = Step
 
