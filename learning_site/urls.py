@@ -22,7 +22,8 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello_world/$', views.hello_world),
-    url(r'^', include('courses.urls')),
+    url(r'^', include('home_page.urls')),
+    url(r'^courses/', include('courses.urls')),
     url(r'(?P<course_pk>\d+)/(?P<step_pk>\d+)/', include('courses.urls')),
     url(r'(?P<pk>\d+)', include('courses.urls')),
 
