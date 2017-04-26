@@ -6,27 +6,78 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'layout.css' %}">
+
     <title>{% block title %}Hello World{% endblock %}</title>
 </head>
 <body>
 
+    <div class="container">
+
+        {% block content %}
+
+
+            <h1>Welcome</h1>
+
+            <p>Hello World</p>
+
+            <div class="row">
+              <div class="col-md-4">
+
+                  <div class="panel panel-danger">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                  </div>
+
+              </div>
+              <div class="col-md-4">
+
+                  <div class="panel panel-danger">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                  </div>
+
+              </div>
+
+                <div class="col-md-4">
+
+                  <div class="panel panel-danger">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                  </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        {% endblock %}
+
+    </div>
+
 </body>
-</html>
-<html>
 
-</html>
-
-
-{% block content %}
-
-
-        <h1>Welcome</h1>
-
-        <p>Hello World</p>
 
 
 
-{% endblock %}
+</html>
 
 
 
